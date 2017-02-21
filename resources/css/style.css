@@ -1,0 +1,164 @@
+/********************
+** BASIC SETUP  **
+*********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  font-family: 'lato', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+
+}
+
+
+/************************
+** REUSABLE COMPONENTS **
+************************/
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/****** TYPOGRAPHY STYLES ******/
+
+h1 {
+  margin: 0;
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+  font-size: 5em;
+  letter-spacing: 2px;
+  color: #e76b37;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+h2 {
+
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #fff;
+  margin-bottom: 36px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 150%;
+}
+
+/****** BUTTONS STYLES ******/
+
+.btn:link,
+.btn:visited {
+   padding: 15px 30px;
+   font-weight: 300;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 0.8em;
+   border-radius: 3px;
+   transition: all .2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #e76b37;
+  color: #fff;
+  border: 1px solid #e76b37;
+  border-radius: 3px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited  {
+  display: inline-block;
+  background-color: none;
+  color: #e76b37;
+  border: 1px solid #e76b37;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #d25019;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #d25019;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #d25019;
+  color: #fff;
+}
+
+
+/*******************
+** HEADER SECTION **
+*******************/
+
+header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(67, 67, 67, .04)),  url("../img/hero.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 150px;
+  margin-top: 20px;
+  width: auto;
+  float:left;
+}
+
+.main-nav {
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .7em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  transition: all .2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  color: #e76b37;
+  border-bottom: 2px solid #e76b37;
+}
