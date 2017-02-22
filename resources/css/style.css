@@ -16,6 +16,12 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 /************************
 ** REUSABLE COMPONENTS **
@@ -55,6 +61,7 @@ h2 {
   font-size: 2em;
   text-align: center;
   margin-bottom: 30px;
+  color: #0C0B24;
 }
 
 h2:after {
@@ -78,7 +85,7 @@ h2:after {
 h3 {
   font-size: 1.5em;
   margin-bottom: 15px;
-  
+
 }
 
 .long-copy {
@@ -173,7 +180,7 @@ header {
 
 .main-nav {
   float: right;
-  list-style-type: none;
+  list-style: none;
   margin-top: 30px;
 }
 
@@ -216,3 +223,121 @@ header {
   fill: #e76b37;
   margin-bottom: 10px;
 }
+
+/*********************
+** PROGRAMS SECTION **
+*********************/
+
+.program-section {
+  background-color: #0C0B24;
+  padding-bottom: 0;
+}
+
+.program-section h2 {
+  color: #e76b37;
+}
+
+.program-section h2::after {
+  background-color: #fff;
+}
+
+
+.programs-showcase {
+  list-style: none;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.programs-showcase li {
+  display: block;
+  float: left;
+  width: 33.333%;
+}
+
+.program-photo {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.program-photo:hover {
+  background-color: #d25019;
+
+}
+
+.program-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.10);
+  opacity: 0.7;
+  transition: all .5s;
+}
+
+.program-photo:hover img {
+  transform: scale(1);
+  opacity: .2;
+}
+
+.program-photo figcaption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+	height: 100%;
+  padding: 3em;
+}
+
+.program-photo figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  border: 1px solid #fff;
+}
+
+.program-photo h3,
+.program-photo p  {
+  text-align: center;
+  color: #fff;
+}
+
+.program-photo h3 {
+  padding-top: 15%;
+}
+
+.program-photo p {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.program-photo figcaption::before,
+.program-photo h3,
+.program-photo p {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: all .4s;
+}
+
+.program-photo:hover figcaption::before,
+.program-photo:hover h3,
+.program-photo:hover p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/
