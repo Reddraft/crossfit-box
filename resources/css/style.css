@@ -42,7 +42,7 @@ section {
 
 /****** TYPOGRAPHY STYLES ******/
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   font-family: 'Pathway Gothic One', sans-serif;
   text-transform: uppercase;
@@ -370,8 +370,23 @@ figure.program-photo:hover p {
 }
 
 
+/************************
+** INSPIRATION SECTION **
+************************/
 
+.section-quote {
+  background-image: linear-gradient(to left, rgba(211, 131, 18, 0.5), rgba(168, 50, 121, .5)), url("../img/inspiration.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 8em 0;
+}
 
+.section-quote h4.quote {
+  font-style: italic;
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+}
 
 
 /**/
