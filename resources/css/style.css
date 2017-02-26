@@ -34,7 +34,7 @@ html {
   margin: 0 auto;
 }
 
-section {
+section, footer {
   padding: 80px 0;
 }
 
@@ -42,13 +42,12 @@ section {
 
 /****** TYPOGRAPHY STYLES ******/
 
-h1, h2, h3, h4 , label{
+h1, h2, h3, h4 {
   margin: 0;
   font-family: 'Pathway Gothic One', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #e76b37;
-
 }
 
 h1 {
@@ -122,6 +121,17 @@ blockquote, p {
   text-align: center;
 }
 
+label {
+  color: #e76b37;
+}
+
+label,
+input[type="text"],
+input[type="email"] {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
 /****** BUTTONS STYLES ******/
 
 .btn:link,
@@ -134,12 +144,13 @@ input[type="submit"] {
    font-weight: 400;
    font-size: 0.8em;
    border-radius: 3px;
-   transition: all .2s;
+   -webkit-transition: all .2s;
+           transition: all .2s;
 }
 
 .btn-full:link,
 .btn-full:visited,
-input[type="submit"] {
+input[type="submit"]{
   display: inline-block;
   margin-right: 10px;
   background-color: #e76b37;
@@ -157,12 +168,16 @@ input[type="submit"] {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:visited {
   background-color: #d25019;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"]:hover,
+input[type="submit"]:visited {
   border: 2px solid #d25019;
 }
 
@@ -178,11 +193,12 @@ input[type="submit"] {
 *******************/
 
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(67, 67, 67, .04)),  url("../img/hero.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(67, 67, 67, .04)),  url("../img/hero.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(67, 67, 67, .04)),  url("../img/hero.jpg");
 }
 
 .hero-text-box {
@@ -190,7 +206,8 @@ header {
   width: 1200px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -221,7 +238,8 @@ header {
   letter-spacing: 2px;
   padding-bottom: 10px;
   border-bottom: 2px solid transparent;
-  transition: all .2s;
+  -webkit-transition: all .2s;
+          transition: all .2s;
 }
 .main-nav li a:hover,
 .main-nav li a:active {
@@ -281,7 +299,8 @@ figure.program-photo {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+          transition: background-color .5s;
 }
 
 figure.program-photo:hover {
@@ -294,13 +313,18 @@ figure.program-photo img {
   width: 100%;
   height: auto;
   opacity: 0.7;
-  transform: scale(1.10);
-  transition: opacity .5s, transform .5s;
+  -webkit-transform: scale(1.10);
+        transform: scale(1.10);
+  -webkit-transition: opacity .5s, -webkit-transform .5s;
+          transition: opacity .5s, -webkit-transform .5s;
+          transition: opacity .5s, transform .5s;
+          transition: opacity .5s, transform .5s, -webkit-transform .5s;
 }
 
 figure.program-photo:hover img {
   opacity: .2;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 figure.program-photo figcaption{
@@ -341,15 +365,18 @@ figure.program-photo figcaption::before,
 figure.program-photo h3,
 figure.program-photo p {
   opacity: 0;
-  transform: scale(1.2);
-  transition: all .4s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .4s;
+          transition: all .4s;
 }
 
 figure.program-photo:hover figcaption::before,
 figure.program-photo:hover h3,
 figure.program-photo:hover p {
   opacity: 1;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /*********************
@@ -390,9 +417,10 @@ figure.program-photo:hover p {
 
 .section-quote {
   padding: 8em 0;
-  background-image: linear-gradient(to left, rgba(210, 80, 25, .5), rgba(168, 50, 121, .2)), url("../img/inspiration.jpg");
   background-size: cover;
   background-position: center center;
+  background-image: -webkit-linear-gradient(right, rgba(210, 80, 25, .5), rgba(168, 50, 121, .2)), url("../img/inspiration.jpg");
+  background-image: linear-gradient(to left, rgba(210, 80, 25, .5), rgba(168, 50, 121, .2)), url("../img/inspiration.jpg");
 }
 
 
@@ -401,11 +429,12 @@ figure.program-photo:hover p {
 ************************/
 
 .section-testimonials {
-  background-image: linear-gradient(to left, rgba(12, 11, 36, 1), rgba(12, 11, 36, .5)), url("../img/testimonials-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   color: #fff;
+  background-image: -webkit-linear-gradient(right, rgba(12, 11, 36, 1), rgba(12, 11, 36, .5)), url("../img/testimonials-bg.jpg");
+  background-image: linear-gradient(to left, rgba(12, 11, 36, 1), rgba(12, 11, 36, .5)), url("../img/testimonials-bg.jpg");
 }
 
 .section-testimonials h2 {
@@ -496,7 +525,7 @@ cite {
 ************************/
 
 .contact-form {
-  border: 4px solid #0C0B24;
+  border: 3px solid #0C0B24;
   margin-top: 20px;
   padding: 3em;
 }
@@ -516,7 +545,7 @@ input[type="text"],
 input[type="email"] {
   padding-bottom: 10px;
   border-color: #0C0B24;
-  border-width: 0 0 4px 0;
+  border-width: 0 0 1px 0;
   margin-bottom: 40px;
 }
 
@@ -527,12 +556,66 @@ input[type="email"]:focus {
   outline: none;
 }
 
+/************************
+**    FOOTER SECTION   **
+************************/
 
+footer {
+  background-color: #0C0B24;
+}
 
+footer h2 {
+  color: #e76b37;
+}
 
+footer h2::after {
+  background-color: #fff;
+}
 
+.social-links {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
 
+.social-links li {
+  display: inline-block;
+  margin-right: 40px;
+}
 
+.social-links li:last-child {
+  margin-right: 0;
+}
 
+.social-links li a:link,
+.social-links li a:visited {
+  color: #fff;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
 
-/**/
+.social-links li a:hover,
+.social-links li a:active {
+  color: #d25019;
+}
+
+.social-links i {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 1.5em;
+  padding: 12px 10px;
+  -webkit-transition: border .5s;
+  transition: border .5s;
+}
+
+.social-links i:hover {
+  border: 2px solid #d25019;
+}
+
+footer p {
+  text-align: center;
+  color: rgba(2546, 256, 256 , 0.3);
+  font-size: .8em;
+}
