@@ -12,8 +12,10 @@ html {
   color: #555;
   font-family: 'lato', 'Arial', sans-serif;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 .clearfix::after {
@@ -98,7 +100,7 @@ h4.quote {
 .long-copy-left {
   font-size: 1.1em;
   margin-bottom: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .long-copy {
@@ -138,7 +140,7 @@ input[type="email"] {
 .btn:visited,
 input[type="submit"] {
    padding: 15px 30px;
-   font-weight: 300;
+   font-weight: 400;
    text-decoration: none;
    text-transform: uppercase;
    font-weight: 400;
