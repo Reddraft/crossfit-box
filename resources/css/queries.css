@@ -190,7 +190,7 @@
 }
 
 
-
+/**** SMALL DEVICES FROM  320px TO 736px -  LANDSCAPE MODE ****/
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 736px)
@@ -198,10 +198,9 @@
   and (orientation: landscape) {
 
     header { min-height: 580px; }
-    .hero-text-box { top: 100%;}
 
-    .coach-box:first-child img {
-      width: 62%;
-    }
+    .hero-text-box { top: 100%; }
+
+    .coach-box:first-child img { width: 62%; }
 
 }

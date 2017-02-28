@@ -219,6 +219,9 @@ header {
   float:left;
 }
 
+/*main navigation*/
+
+
 .main-nav {
   float: right;
   list-style: none;
@@ -248,6 +251,43 @@ header {
   color: #e76b37;
   border-bottom: 2px solid #e76b37;
 }
+
+
+/*sticky navigation*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(256, 256, 256, .95);
+  z-index: 30;
+  padding: 5px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #0C0B24;
+  border-bottom: 5px solid transparent;
+  padding-bottom: 38px;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+  color: #e76b37;
+  border-bottom: 5px solid #e76b37;
+}
+
+.sticky .logo {
+  height: 90px;
+  margin-top: 0px;
+  width: auto;
+  float:left;
+}
+
+
 
 /*********************
 ** BENEFITS SECTION **
