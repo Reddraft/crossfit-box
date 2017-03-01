@@ -17,18 +17,18 @@
   <body>
 
     <!-- HEADER SECTION -->
-    <header>
+    <header id="top-section">
 
       <!-- navigation -->
       <nav>
         <div class="row">
-           <img src="resources/img/logo.svg" class= "logo" alt="crossfit logo"/>
+           <div><a href="#top-section"><img src="resources/img/logo.svg" class= "logo" alt="crossfit logo"/></a></div>
 
            <ul class="main-nav">
-             <li><a href="#">Benefits</a></li>
-             <li><a href="#">Programs</a></li>
-             <li><a href="#">The Coach</a></li>
-             <li><a href="#">Plans</a></li>
+             <li><a href="#benefits">Benefits</a></li>
+             <li><a href="#programs">Programs</a></li>
+             <li><a href="#coach">The Coach</a></li>
+             <li><a href="#plans">Plans</a></li>
            </ul>
         </div>
       </nav>
@@ -38,15 +38,15 @@
         <h1>Crossfit Done Right.</h1>
         <h3 class="subtitle">Effective Training. Long-Term Results.</h3>
 
-        <a class="btn btn-full" href="#">Start training now!</a>
-        <a class="btn btn-ghost" href="#">Learn More</a>
+        <a class="btn btn-full js-scroll-to-plans" href="#">Start training now!</a>
+        <a class="btn btn-ghost js-scroll-to-programs" href="#">Learn More</a>
       </div>
 
     </header>
 
 
     <!-- BENEFITS SECTION -->
-    <section class="benefits js-section-benefits">
+    <section class="benefits js-section-benefits" id="benefits">
 
       <div class="row">
         <h2>CROSSFIT IS THE PERFECT WAY TO FIT YOUR BODY AND MIND</h2>
@@ -93,7 +93,7 @@
 
 
     <!-- PROGRAMS SECTION -->
-    <section class="program-section">
+    <section class="program-section js-section-programs" id="programs">
 
       <div class="row">
         <h2>CHOOSE YOUR PROGRAM</h2>
@@ -137,7 +137,7 @@
 
 
     <!-- COACH SECTION -->
-    <section class="section-coach">
+    <section class="section-coach" id="coach">
 
       <div class="row">
 
@@ -172,7 +172,7 @@
 
 
     <!-- PLAN SECTION -->
-    <section class="section-plans">
+    <section class="section-plans js-section-plans" id="plans">
 
       <div class="row">
         <h2>AVAILABLE PRICING PACKS</h2>
@@ -336,7 +336,7 @@
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="vendors/js/jquery.waypoints.min.js"></script>
 
