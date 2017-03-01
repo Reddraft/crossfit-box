@@ -90,21 +90,45 @@ $(document).ready(function() {
   // benefits section animations
   $('.js-wp-animate-heading-benefits').waypoint(function(direction) {
       $('.js-wp-animate-heading-benefits').addClass('animated zoomIn');
-  }, {
-    offset: '200px;'
-  });
-
-  $('.js-wp-animate-heading-benefits').waypoint(function(direction) {
       $('.js-wp-animate-parragraph-benefits').addClass('animated fadeInUp');
-  }, {
-    offset: '200px;'
-  });
-
-  $('.js-wp-animate-heading-benefits').waypoint(function(direction) {
       $('.js-wp-animate-benefits-boxes').addClass('animated fadeIn');
   }, {
     offset: '200px;'
   });
+
+
+  // programs section animations
+  $('.js-wp-animate-heading-programs').waypoint(function(direction) {
+      $('.js-wp-animate-heading-programs').addClass('animated zoomIn');
+      $('.js-wp-animate-programs').addClass('animated fadeIn');
+  }, {
+    offset: '200px;'
+  });
+
+  // coach section animations
+  $('.js-section-coach').waypoint(function(direction) {
+      $('.js-wp-animate-coach-img').addClass('animated slideInLeft');
+      $('.js-wp-animate-coach-heading').addClass('animated zoomIn');
+      $('.js-wp-animate-coach-subtitle').addClass('animated fadeIn');
+      $('.js-wp-animate-coach-parragraph').addClass('animated fadeIn');
+      $('.js-wp-animate-coach-btn').addClass('animated fadeIn');
+  }, {
+    offset: '110px;'
+  });
+
+  // plans section animations
+  $('.js-section-plans').waypoint(function(direction) {
+      $('.js-wp-animate-plans-heading').addClass('animated zoomIn');
+      $('.js-wp-animate-plans-box-1').addClass('animated fadeIn');
+      $('.js-wp-animate-plans-box-2').addClass('animated fadeIn');
+      $('.js-wp-animate-plans-box-3').addClass('animated fadeIn');
+  }, {
+    offset: '110px;'
+  });
+
+
+
+
 
 
 });

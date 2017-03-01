@@ -8,8 +8,8 @@
 }
 
 .js-wp-animate-hero-text-box {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
@@ -32,22 +32,142 @@
 
 /* h2 animation timing*/
 .js-wp-animate-heading-benefits {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 /* parragraph animation timing*/
 .js-wp-animate-parragraph-benefits {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 /* benefit boxes animation timing */
 .js-wp-animate-benefits-boxes {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+
+/**** PROGRAMS ANIMATIONS  ******/
+
+.js-wp-animate-heading-programs,
+.js-wp-animate-programs {
+  opacity: 0;
+}
+.js-wp-animate-heading-programs.animated,
+.js-wp-animate-programs.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-heading-programs {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.js-wp-animate-programs {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+
+/**** COACH SECTION ANIMATIONS  ******/
+
+.js-wp-animate-coach-img,
+.js-wp-animate-coach-heading,
+.js-wp-animate-coach-subtitle,
+.js-wp-animate-coach-parragraph,
+.js-wp-animate-coach-btn {
+  opacity: 0;
+}
+.js-wp-animate-coach-img.animated,
+.js-wp-animate-coach-heading.animated,
+.js-wp-animate-coach-subtitle.animated,
+.js-wp-animate-coach-parragraph.animated,
+.js-wp-animate-coach-btn.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-coach-img {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.js-wp-animate-coach-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.js-wp-animate-coach-subtitle {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.js-wp-animate-coach-parragraph {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.js-wp-animate-coach-btn{
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+
+/**** PLANS SECTION ANIMATIONS  ******/
+
+.js-wp-animate-plans-heading,
+.js-wp-animate-plans-box-1,
+.js-wp-animate-plans-box-2,
+.js-wp-animate-plans-box-3 {
+  opacity: 0;
+}
+
+.js-wp-animate-plans-heading.animated,
+.js-wp-animate-plans-box-1.animated,
+.js-wp-animate-plans-box-2.animated,
+.js-wp-animate-plans-box-3.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-plans-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.js-wp-animate-plans-box-1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.js-wp-animate-plans-box-2 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.js-wp-animate-plans-box-3 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
