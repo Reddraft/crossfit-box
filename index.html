@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="vendors/css/font-awesome.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="resources/css/animations.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
 
@@ -21,25 +23,31 @@
 
       <!-- navigation -->
       <nav>
-        <div class="row">
-           <div><a href="#top-section"><img src="resources/img/logo.svg" class= "logo" alt="crossfit logo"/></a></div>
+        <div class="js-wp-animate-nav">
+          <div class="row">
+             <div><a href="#top-section"><img src="resources/img/logo.svg" class= "logo" alt="crossfit logo"/></a></div>
 
-           <ul class="main-nav">
-             <li><a href="#benefits">Benefits</a></li>
-             <li><a href="#programs">Programs</a></li>
-             <li><a href="#coach">The Coach</a></li>
-             <li><a href="#plans">Plans</a></li>
-           </ul>
+             <ul class="main-nav">
+               <li><a href="#benefits">Benefits</a></li>
+               <li><a href="#programs">Programs</a></li>
+               <li><a href="#coach">The Coach</a></li>
+               <li><a href="#plans">Plans</a></li>
+             </ul>
+          </div>
         </div>
       </nav>
 
       <!-- hero-text-box -->
       <div class="hero-text-box">
-        <h1>Crossfit Done Right.</h1>
-        <h3 class="subtitle">Effective Training. Long-Term Results.</h3>
+        <div class="js-wp-animate-hero-text-box">
+          <h1>Crossfit Done Right.</h1>
+          <h3 class="subtitle">Effective Training. Long-Term Results.</h3>
 
-        <a class="btn btn-full js-scroll-to-plans" href="#">Start training now!</a>
-        <a class="btn btn-ghost js-scroll-to-programs" href="#">Learn More</a>
+          <a class="btn btn-full js-scroll-to-plans" href="#">Start training now!</a>
+          <a class="btn btn-ghost js-scroll-to-programs" href="#">Learn More</a>
+
+        </div>
+
       </div>
 
     </header>
@@ -49,8 +57,8 @@
     <section class="benefits js-section-benefits" id="benefits">
 
       <div class="row">
-        <h2>CROSSFIT IS THE PERFECT WAY TO FIT YOUR BODY AND MIND</h2>
-        <p class="long-copy">
+        <h2 class="js-wp-animate-heading-benefits">CROSSFIT IS THE PERFECT WAY TO FIT YOUR BODY AND MIND</h2>
+        <p class="long-copy js-wp-animate-parragraph-benefits">
           Challenge yourself at gym x with your daily dose of fitness using functional movements performed at high intensity.
           It time to go beyond your limits and discover your personal potential now
         </p>
@@ -58,33 +66,37 @@
 
       <!-- benefits -->
       <div class="row">
-        <!-- benefit 1 -->
-        <div class="col span-1-of-3 box">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="31.8 174.1 544.4 446.3" class= "heart-icon">
-          <path d="M567 365.8c-3.1 9.2-6.7 17.7-10.7 26 -20.2 39.5-53.2 67.3-93.6 91.5 -58.4 34.9-115.1 67-146.6 130.4 -2.4 5.5-7.3 7.3-11.9 6.7 -4.9 0.6-9.2-1.2-11.6-6.7 -36.7-72.2-103.7-101.3-167.7-143.5 -53.2-34.9-86.3-83.2-92.4-147.8 -5.5-58.4 24.8-110.5 77.7-134.6 39.2-18.1 87.5-17.4 127.3-1.8 32.4 12.9 54.8 36.1 67 64.6 16.2-34.9 45.3-60.9 86.3-70.7 43.5-10.7 91.2-5.5 128.5 19.9 50.2 34 65.8 93 52.3 150.9C570.4 355.4 568.9 360.6 567 365.8zM318.9 304c-0.3 1.2-0.3 2.1-0.6 3.1 0.3-0.9 0.3-1.8 0-3.1 -0.3 4.3-2.1 7.3-4.6 9.8 -0.3 0.3-0.6 0.6-1.2 0.9 -2.4 1.5-5.2 2.4-8 2.4l0 0c-5.8-0.6-12.2-4.6-13.5-11.6 0-0.6-0.3-0.9-0.3-1.5 -6.1-65.2-54.8-103.7-118.7-102.5 -59.7 1.2-111.7 42.8-112.3 105 0 22.3 3.7 41.9 11 59.1 27.8 0 78 0 99.4 0 15-28.2 30.3-56.3 45.3-84.5 1.2-2.1 2.1-4.3 3.4-6.1 4.3-8.3 15.3-5.2 18.1 2.4 23.3 61.2 46.5 122.4 70.1 183.9 18.4-43.5 37-86.6 55.4-130 1.2-2.8 2.4-5.5 3.7-8.3 2.8-6.7 14.1-6.1 17.1 0 4.6 8.6 9.2 17.4 13.5 26 6.4-14.7 12.5-29.7 19-44.4 0.9-2.1 1.8-4.6 3.1-6.7 3.7-8.3 15.9-4.9 18.1 2.4 6.4 22 13.2 43.8 19.6 65.8 27.5 0 55.1 0 82.6 0 7-17.4 11-36.7 10.7-59.1 -0.6-63.3-54.8-105-114.8-105C371.5 201.8 324.4 240 318.9 304zM525.1 391.5c-25.4 0-50.8 0-76.2 0 -4.3 0-8.3-3.1-9.5-7.3 -4.6-15.6-9.2-28.2-13.8-43.8 -5.2 12.2-10.4 24.8-15.9 37 -1.2 2.8-2.4 5.5-3.7 8.6 -3.1 6.7-14.1 6.1-17.1 0 -4.6-8.6-8.9-17.4-13.5-26 -19.3 45-38.2 90-57.5 134.9l0 0c-0.9 2.1-1.8 4.6-2.8 6.7 -3.7 8.6-15.6 4.6-18.1-2.4 -23.9-62.1-47.4-124.2-71-186.4 -13.8 25.7-27.5 48.3-41.3 73.7 -1.5 3.1-5.2 4.9-8.6 4.9 -19.6 0-63 0-91.5 0 21.7 32.1 55.4 55.7 91.8 77.1 50.2 29.1 97 60.9 127.9 109.9 31.8-49.6 79.6-81.4 131-111.1C471.5 446.3 504 423 525.1 391.5z" /><path d="M318.2 304.3c0 1.2 0 2.1 0 3.1 -0.9 2.8-2.4 4.9-4.6 6.7C316.1 311.6 317.9 308.6 318.2 304.3z" /><path d="M317.9 307.3c-0.9 7-7 10.4-13.5 10.1 2.8 0 5.5-0.9 8-2.4 0.3-0.3 0.6-0.6 1.2-0.9C315.5 312.2 317.3 310.1 317.9 307.3z" /><path d="M304.5 317.1c-7.3 0.6-14.4-3.7-13.8-13.2 0 0.6 0 0.9 0.3 1.5C292.2 313.1 298 317.1 304.5 317.1z" /></svg>
-          <h3>HIGH-INTENSITY</h3>
-          <p>What is High Intensity? High Intensity as defined by CrossFit is how fast you get real work done.
-            The more work you can do in less time increases power.
-            The more power you can do the harder it is and also yields the best results.</p>
-        </div>
-        <!-- benefit 2 -->
-        <div class="col span-1-of-3 box">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="120.4 25.6 370.4 584.3" class="functional-icon">
-          <path d="M483.2 425.3c-7.6-10.2-19.1-15.3-30.6-15.3h-38.2V295.3c0-23-12.8-43.4-30.6-54.8 0-2.6 1.3-6.4 1.3-8.9 1.3 0 2.5 0 3.8 0 28.1 0 51-22.9 51-51s-22.9-51-51-51c-1.3 0-3.8 0-5.1 0 -7.6-48.4-24.2-80.3-24.2-81.6 -5.1-8.9-21.7-31.9-51-17.9 -30.6 14-21.7 42.1-17.9 51 0 1.3 40.8 86.7 8.9 174.7 -14 25.5-12.8 35.7-12.8 37v128.8l-39.5 58.7 -107.1 58.6c-17.8 10.2-25.5 33.1-15.3 52.3 6.4 11.5 24.2 26.8 52.3 14L292 541.3c5.1-2.5 10.2-7.6 14-12.8l31.9-48.4c1.3 0 5.1 1.3 12.8 1.3h51l-22.9 77.8c-2.6 10.2-5.1 37 25.5 47.2 3.8 1.3 37 6.4 47.2-25.5l38.2-127.5 0 0C492.1 447 490.9 434.2 483.2 425.3zM414.4 180.5c0 14-12.8 25.5-26.8 25.5 1.3-25.5-1.3-49.7-1.3-51C401.6 153.8 414.4 165.2 414.4 180.5zM465.4 450.8l-38.2 127.5c-1.3 5.1-6.4 11.5-15.3 8.9 -11.5-3.8-8.9-12.8-8.9-15.3l28-94.4c1.3-3.8 0-7.6-2.5-11.5 -2.6-3.8-6.4-5.1-10.2-5.1h-67.6c-7.6 0-16.6-3.8-17.9-3.8 -3.8 0-7.6 2.5-10.2 5.1l-37 56.1c-1.3 1.3-2.5 2.6-5.1 3.8L165.8 586c-6.4 3.8-14 1.3-17.9-5.1s-1.3-14 5.1-17.9l109.6-61.2c1.3-1.3 3.8-2.6 3.8-3.8l43.4-65c1.3-2.6 2.6-5.1 2.6-7.6 0-1.3 0-133.9 0-133.9 0-7.6 3.8-15.3 8.9-21.7 1.3-1.3 1.3-2.6 2.5-3.8 37-99.4-8.9-195.1-8.9-196.3 -1.3-2.6-5.1-11.5 6.4-16.6 7.6-3.8 15.3 2.6 16.6 6.4 0 0 17.8 35.7 24.2 86.7 2.6 23 3.8 61.2-3.8 98.2 -1.3 6.4 2.6 12.8 7.7 15.3 15.3 5.1 24.2 20.4 24.2 35.7v127.5c0 7.6 5.1 12.8 12.8 12.8h51c3.8 0 7.6 1.3 10.2 5.1C465.4 443.2 465.4 447 465.4 450.8z"/></svg>
 
-          <h3>FUNCTIONAL</h3>
-          <p>What are functional movements? In short, functional movements are those that mimic common activity of daily living or
-            movements that aren't so common like running from a rabid dog, scaling a wall from a fire or lifting a heavy rock off
-            a trapped friend</p>
-        </div>
-        <!-- benefit 3 -->
-        <div class="col span-1-of-3 box">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 29.1 612 587.1" class="scalable-icon">
-          <path d="M36.3 616.2H0v-36.3C0 599.9 16.2 616.2 36.3 616.2zM318.5 592.4H37.4 24.9v-12.5V322.6v-24.9H0v282.2c0 20 16.2 36.3 36.3 36.3h306v-23.8H318.5zM24.9 579.9v12.5h12.5C30.5 592.4 24.9 586.8 24.9 579.9zM583 53.3c-0.9-0.4-1.8-0.5-2.8-0.5h-1.1l-15.9 4.5L444.3 88c-2.9 1.1-4.4 4.4-3.3 7.3 0.2 0.7 0.6 1.3 1.1 1.8l39.7 39.7L314 297.7H24.9v24.9h263.1L113.3 490.3l-36.3-40.8c-2.3-2.1-5.9-1.9-8 0.5 -0.5 0.5-0.8 1.1-1.1 1.8L29.5 572l-4.5 13.6c-0.6 3.1 1.4 6.1 4.4 6.7 0.4 0.1 0.8 0.1 1.2 0.1l12.5-2.3L167.7 564c2.9-1.1 4.4-4.4 3.3-7.3 -0.2-0.7-0.6-1.3-1.1-1.8l-41.9-47.6 190.4-182.8v267.8h23.8V301.7l155.3-149.1 43.1 44.2c2.3 2.1 5.9 1.9 8-0.5 0.5-0.5 0.8-1.1 1.1-1.8l34-124.7 2.3-9.1C587.2 58 585.9 54.6 583 53.3zM575.7 29.1H36.3C16.2 29.1 0 45.3 0 65.4v232.3h24.9V65.4c0-6.5 4.9-11.9 11.3-12.5h539.5c6.9 0 12.5 5.6 12.5 12.5v514.5c0 6.9-5.6 12.5-12.5 12.5H342.3v23.8h233.5c20 0 36.3-16.2 36.3-36.3V65.4C612 45.3 595.8 29.1 575.7 29.1z"/></svg>
-          <h3>SCALABLE</h3>
-          <p>Scalability allows us to alter the daily workouts to a member's age, experience or athletic prowess, etc.
-            We understand that many folks join CrossFit to get in shape and will not be able to complete the prescribed workout or movements.
-            </p>
+        <div class="js-wp-animate-benefits-boxes">
+          <!-- benefit 1 -->
+          <div class="col span-1-of-3 box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="31.8 174.1 544.4 446.3" class= "heart-icon">
+            <path d="M567 365.8c-3.1 9.2-6.7 17.7-10.7 26 -20.2 39.5-53.2 67.3-93.6 91.5 -58.4 34.9-115.1 67-146.6 130.4 -2.4 5.5-7.3 7.3-11.9 6.7 -4.9 0.6-9.2-1.2-11.6-6.7 -36.7-72.2-103.7-101.3-167.7-143.5 -53.2-34.9-86.3-83.2-92.4-147.8 -5.5-58.4 24.8-110.5 77.7-134.6 39.2-18.1 87.5-17.4 127.3-1.8 32.4 12.9 54.8 36.1 67 64.6 16.2-34.9 45.3-60.9 86.3-70.7 43.5-10.7 91.2-5.5 128.5 19.9 50.2 34 65.8 93 52.3 150.9C570.4 355.4 568.9 360.6 567 365.8zM318.9 304c-0.3 1.2-0.3 2.1-0.6 3.1 0.3-0.9 0.3-1.8 0-3.1 -0.3 4.3-2.1 7.3-4.6 9.8 -0.3 0.3-0.6 0.6-1.2 0.9 -2.4 1.5-5.2 2.4-8 2.4l0 0c-5.8-0.6-12.2-4.6-13.5-11.6 0-0.6-0.3-0.9-0.3-1.5 -6.1-65.2-54.8-103.7-118.7-102.5 -59.7 1.2-111.7 42.8-112.3 105 0 22.3 3.7 41.9 11 59.1 27.8 0 78 0 99.4 0 15-28.2 30.3-56.3 45.3-84.5 1.2-2.1 2.1-4.3 3.4-6.1 4.3-8.3 15.3-5.2 18.1 2.4 23.3 61.2 46.5 122.4 70.1 183.9 18.4-43.5 37-86.6 55.4-130 1.2-2.8 2.4-5.5 3.7-8.3 2.8-6.7 14.1-6.1 17.1 0 4.6 8.6 9.2 17.4 13.5 26 6.4-14.7 12.5-29.7 19-44.4 0.9-2.1 1.8-4.6 3.1-6.7 3.7-8.3 15.9-4.9 18.1 2.4 6.4 22 13.2 43.8 19.6 65.8 27.5 0 55.1 0 82.6 0 7-17.4 11-36.7 10.7-59.1 -0.6-63.3-54.8-105-114.8-105C371.5 201.8 324.4 240 318.9 304zM525.1 391.5c-25.4 0-50.8 0-76.2 0 -4.3 0-8.3-3.1-9.5-7.3 -4.6-15.6-9.2-28.2-13.8-43.8 -5.2 12.2-10.4 24.8-15.9 37 -1.2 2.8-2.4 5.5-3.7 8.6 -3.1 6.7-14.1 6.1-17.1 0 -4.6-8.6-8.9-17.4-13.5-26 -19.3 45-38.2 90-57.5 134.9l0 0c-0.9 2.1-1.8 4.6-2.8 6.7 -3.7 8.6-15.6 4.6-18.1-2.4 -23.9-62.1-47.4-124.2-71-186.4 -13.8 25.7-27.5 48.3-41.3 73.7 -1.5 3.1-5.2 4.9-8.6 4.9 -19.6 0-63 0-91.5 0 21.7 32.1 55.4 55.7 91.8 77.1 50.2 29.1 97 60.9 127.9 109.9 31.8-49.6 79.6-81.4 131-111.1C471.5 446.3 504 423 525.1 391.5z" /><path d="M318.2 304.3c0 1.2 0 2.1 0 3.1 -0.9 2.8-2.4 4.9-4.6 6.7C316.1 311.6 317.9 308.6 318.2 304.3z" /><path d="M317.9 307.3c-0.9 7-7 10.4-13.5 10.1 2.8 0 5.5-0.9 8-2.4 0.3-0.3 0.6-0.6 1.2-0.9C315.5 312.2 317.3 310.1 317.9 307.3z" /><path d="M304.5 317.1c-7.3 0.6-14.4-3.7-13.8-13.2 0 0.6 0 0.9 0.3 1.5C292.2 313.1 298 317.1 304.5 317.1z" /></svg>
+            <h3>HIGH-INTENSITY</h3>
+            <p>What is High Intensity? High Intensity as defined by CrossFit is how fast you get real work done.
+              The more work you can do in less time increases power.
+              The more power you can do the harder it is and also yields the best results.</p>
+          </div>
+          <!-- benefit 2 -->
+          <div class="col span-1-of-3 box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="120.4 25.6 370.4 584.3" class="functional-icon">
+            <path d="M483.2 425.3c-7.6-10.2-19.1-15.3-30.6-15.3h-38.2V295.3c0-23-12.8-43.4-30.6-54.8 0-2.6 1.3-6.4 1.3-8.9 1.3 0 2.5 0 3.8 0 28.1 0 51-22.9 51-51s-22.9-51-51-51c-1.3 0-3.8 0-5.1 0 -7.6-48.4-24.2-80.3-24.2-81.6 -5.1-8.9-21.7-31.9-51-17.9 -30.6 14-21.7 42.1-17.9 51 0 1.3 40.8 86.7 8.9 174.7 -14 25.5-12.8 35.7-12.8 37v128.8l-39.5 58.7 -107.1 58.6c-17.8 10.2-25.5 33.1-15.3 52.3 6.4 11.5 24.2 26.8 52.3 14L292 541.3c5.1-2.5 10.2-7.6 14-12.8l31.9-48.4c1.3 0 5.1 1.3 12.8 1.3h51l-22.9 77.8c-2.6 10.2-5.1 37 25.5 47.2 3.8 1.3 37 6.4 47.2-25.5l38.2-127.5 0 0C492.1 447 490.9 434.2 483.2 425.3zM414.4 180.5c0 14-12.8 25.5-26.8 25.5 1.3-25.5-1.3-49.7-1.3-51C401.6 153.8 414.4 165.2 414.4 180.5zM465.4 450.8l-38.2 127.5c-1.3 5.1-6.4 11.5-15.3 8.9 -11.5-3.8-8.9-12.8-8.9-15.3l28-94.4c1.3-3.8 0-7.6-2.5-11.5 -2.6-3.8-6.4-5.1-10.2-5.1h-67.6c-7.6 0-16.6-3.8-17.9-3.8 -3.8 0-7.6 2.5-10.2 5.1l-37 56.1c-1.3 1.3-2.5 2.6-5.1 3.8L165.8 586c-6.4 3.8-14 1.3-17.9-5.1s-1.3-14 5.1-17.9l109.6-61.2c1.3-1.3 3.8-2.6 3.8-3.8l43.4-65c1.3-2.6 2.6-5.1 2.6-7.6 0-1.3 0-133.9 0-133.9 0-7.6 3.8-15.3 8.9-21.7 1.3-1.3 1.3-2.6 2.5-3.8 37-99.4-8.9-195.1-8.9-196.3 -1.3-2.6-5.1-11.5 6.4-16.6 7.6-3.8 15.3 2.6 16.6 6.4 0 0 17.8 35.7 24.2 86.7 2.6 23 3.8 61.2-3.8 98.2 -1.3 6.4 2.6 12.8 7.7 15.3 15.3 5.1 24.2 20.4 24.2 35.7v127.5c0 7.6 5.1 12.8 12.8 12.8h51c3.8 0 7.6 1.3 10.2 5.1C465.4 443.2 465.4 447 465.4 450.8z"/></svg>
+
+            <h3>FUNCTIONAL</h3>
+            <p>What are functional movements? In short, functional movements are those that mimic common activity of daily living or
+              movements that aren't so common like running from a rabid dog, scaling a wall from a fire or lifting a heavy rock off
+              a trapped friend</p>
+          </div>
+          <!-- benefit 3 -->
+          <div class="col span-1-of-3 box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 29.1 612 587.1" class="scalable-icon">
+            <path d="M36.3 616.2H0v-36.3C0 599.9 16.2 616.2 36.3 616.2zM318.5 592.4H37.4 24.9v-12.5V322.6v-24.9H0v282.2c0 20 16.2 36.3 36.3 36.3h306v-23.8H318.5zM24.9 579.9v12.5h12.5C30.5 592.4 24.9 586.8 24.9 579.9zM583 53.3c-0.9-0.4-1.8-0.5-2.8-0.5h-1.1l-15.9 4.5L444.3 88c-2.9 1.1-4.4 4.4-3.3 7.3 0.2 0.7 0.6 1.3 1.1 1.8l39.7 39.7L314 297.7H24.9v24.9h263.1L113.3 490.3l-36.3-40.8c-2.3-2.1-5.9-1.9-8 0.5 -0.5 0.5-0.8 1.1-1.1 1.8L29.5 572l-4.5 13.6c-0.6 3.1 1.4 6.1 4.4 6.7 0.4 0.1 0.8 0.1 1.2 0.1l12.5-2.3L167.7 564c2.9-1.1 4.4-4.4 3.3-7.3 -0.2-0.7-0.6-1.3-1.1-1.8l-41.9-47.6 190.4-182.8v267.8h23.8V301.7l155.3-149.1 43.1 44.2c2.3 2.1 5.9 1.9 8-0.5 0.5-0.5 0.8-1.1 1.1-1.8l34-124.7 2.3-9.1C587.2 58 585.9 54.6 583 53.3zM575.7 29.1H36.3C16.2 29.1 0 45.3 0 65.4v232.3h24.9V65.4c0-6.5 4.9-11.9 11.3-12.5h539.5c6.9 0 12.5 5.6 12.5 12.5v514.5c0 6.9-5.6 12.5-12.5 12.5H342.3v23.8h233.5c20 0 36.3-16.2 36.3-36.3V65.4C612 45.3 595.8 29.1 575.7 29.1z"/></svg>
+            <h3>SCALABLE</h3>
+            <p>Scalability allows us to alter the daily workouts to a member's age, experience or athletic prowess, etc.
+              We understand that many folks join CrossFit to get in shape and will not be able to complete the prescribed workout or movements.
+              </p>
+          </div>
+
         </div>
 
       </div>

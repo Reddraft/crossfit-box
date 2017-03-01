@@ -5,7 +5,6 @@ $(document).ready(function() {
   *** STICKY NAVIGATION **
   ************************/
 
-
   $('.js-section-benefits').waypoint(function(direction) {
     if (direction === 'down') {
       //fadeout hide the nav
@@ -15,11 +14,11 @@ $(document).ready(function() {
         $(this).addClass('sticky');
       });
       //show the nav again with the class sticky already added
-      $('nav').fadeIn()
+      $('nav').fadeIn(200);
 
     } else {
       //fadeout the nav again
-      $('nav').fadeOut(function() {
+      $('nav').fadeOut(200, function() {
         //remove the sticky class
         $(this).removeClass('sticky');
       });
@@ -41,8 +40,8 @@ $(document).ready(function() {
         scrollTop: $('.js-section-plans').offset().top - 100
       },
       {
-        duration: 2000,
-        easing: 'easeOutExpo'
+        duration: 1000,
+        easing: 'linear'
       })
   });
 
@@ -53,32 +52,59 @@ $(document).ready(function() {
         scrollTop: $('.js-section-programs').offset().top - 100
       },
       {
-        duration: 2000,
+        duration: 1000,
         easing: 'linear'
       })
   });
 
   /**************************
   *** SCROLL ON NAVIGATION **
-  *https://css-tricks.com/snippets/jquery/smooth-scrolling *
   **************************/
-
+  /* https://css-tricks.com/snippets/jquery/smooth-scrolling */
 
   $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          //substract 100 to anchor 100px from the top
-          scrollTop: target.offset().top - 100
-        }, 2000);
-        return false;
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            //substract 100 to anchor 100px from the top
+            scrollTop: target.offset().top - 100
+          }, 1000);
+          return false;
+        }
       }
-    }
+    });
   });
-});
+
+
+  /******************************
+  *** ANIMATIONS ON SCROLLING **
+  *******************************/
+
+  // header animations
+  $('.js-wp-animate-nav').addClass('animated fadeInDown');
+  $('.js-wp-animate-hero-text-box').addClass('animated fadeInUp');
+
+  // benefits section animations
+  $('.js-wp-animate-heading-benefits').waypoint(function(direction) {
+      $('.js-wp-animate-heading-benefits').addClass('animated zoomIn');
+  }, {
+    offset: '200px;'
+  });
+
+  $('.js-wp-animate-heading-benefits').waypoint(function(direction) {
+      $('.js-wp-animate-parragraph-benefits').addClass('animated fadeInUp');
+  }, {
+    offset: '200px;'
+  });
+
+  $('.js-wp-animate-heading-benefits').waypoint(function(direction) {
+      $('.js-wp-animate-benefits-boxes').addClass('animated fadeIn');
+  }, {
+    offset: '200px;'
+  });
 
 
 });

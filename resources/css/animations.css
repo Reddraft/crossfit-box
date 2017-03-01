@@ -1,0 +1,53 @@
+
+/**** HEADER ANIMATIONS ******/
+.js-wp-animate-nav {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.js-wp-animate-hero-text-box {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+
+/**** BENEFITS ANIMATIONS  ******/
+
+/*hide before applaying aimated class*/
+.js-wp-animate-heading-benefits,
+.js-wp-animate-parragraph-benefits,
+.js-wp-animate-benefits-boxes {
+  opacity: 0;
+}
+/*show after applaying animated class*/
+.js-wp-animate-heading-benefits.animated,
+.js-wp-animate-parragraph-benefits.animated,
+.js-wp-animate-benefits-boxes.animated {
+  opacity: 1;
+}
+
+/* h2 animation timing*/
+.js-wp-animate-heading-benefits {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+/* parragraph animation timing*/
+.js-wp-animate-parragraph-benefits {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+/* benefit boxes animation timing */
+.js-wp-animate-benefits-boxes {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
