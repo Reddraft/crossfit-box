@@ -13,7 +13,6 @@
 
   figure.program-photo h3 { padding-top: 5%; }
 
-
 }
 
 
@@ -23,6 +22,12 @@
   body { font-size: 18px; }
 
   .row { width: 94%; }
+
+  .logo { width: 124px}
+
+  .main-nav li {
+    margin-left: 32px;
+  }
 
   h2 { font-size: 1.9em; }
 
@@ -103,7 +108,7 @@
     margin-bottom: 20px;
    }
 
-  .hero-text-box > .btn { width: 80%; }
+  .hero-text-box  .btn { width: 80%; }
 
   .btn-full:link, .btn-full:visited, input[type="submit"] { margin-right: 0; }
 

@@ -171,3 +171,72 @@
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
+
+.js-wp-animate-plans-box-special {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  /*-webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;*/
+}
+
+
+/**** TESTIMONIALS SECTION ANIMATIONS  ******/
+
+.js-wp-animate-testimonial-heading,
+.js-wp-animate-testimonials-boxes {
+  opacity: 0;
+}
+
+.js-wp-animate-testimonial-heading.animated,
+.js-wp-animate-testimonials-boxes.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-testimonial-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.js-wp-animate-testimonials-boxes {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+/**** REGISTRATION SECTION ANIMATIONS  ******/
+
+.js-wp-animate-register-heading,
+.js-wp-animate-register-parragraph,
+.js-wp-animate-register-form {
+  opacity: 0;
+}
+
+.js-wp-animate-register-heading.animated,
+.js-wp-animate-register-parragraph.animated,
+.js-wp-animate-register-form.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-register-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.js-wp-animate-register-parragraph {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.js-wp-animate-register-form {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}

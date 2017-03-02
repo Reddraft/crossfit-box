@@ -37,7 +37,7 @@ $(document).ready(function() {
   $('.js-scroll-to-plans').click(function() {
     $('html, body').animate(
       {
-        scrollTop: $('.js-section-plans').offset().top - 100
+        scrollTop: $('.js-section-plans').offset().top - 99
       },
       {
         duration: 1000,
@@ -46,10 +46,10 @@ $(document).ready(function() {
   });
 
   //-- go to section programs when click on Start training now button
-  $('.js-scroll-to-programs').click(function() {
+  $('.js-scroll-to-register').click(function() {
     $('html, body').animate(
       {
-        scrollTop: $('.js-section-programs').offset().top - 100
+        scrollTop: $('.js-section-register').offset().top - 99
       },
       {
         duration: 1000,
@@ -70,7 +70,7 @@ $(document).ready(function() {
         if (target.length) {
           $('html, body').animate({
             //substract 100 to anchor 100px from the top
-            scrollTop: target.offset().top - 100
+            scrollTop: target.offset().top - 99
           }, 1000);
           return false;
         }
@@ -113,7 +113,7 @@ $(document).ready(function() {
       $('.js-wp-animate-coach-parragraph').addClass('animated fadeIn');
       $('.js-wp-animate-coach-btn').addClass('animated fadeIn');
   }, {
-    offset: '110px;'
+    offset: '200px;'
   });
 
   // plans section animations
@@ -122,8 +122,26 @@ $(document).ready(function() {
       $('.js-wp-animate-plans-box-1').addClass('animated fadeIn');
       $('.js-wp-animate-plans-box-2').addClass('animated fadeIn');
       $('.js-wp-animate-plans-box-3').addClass('animated fadeIn');
+      $('.js-wp-animate-plans-box-special').addClass('animated shake');
   }, {
-    offset: '110px;'
+    offset: '200px;'
+  });
+
+  // testimonials section animations
+  $('.js-section-testimonials').waypoint(function(direction) {
+      $('.js-wp-animate-testimonial-heading').addClass('animated zoomIn');
+      $('.js-wp-animate-testimonials-boxes').addClass('animated fadeIn');
+  }, {
+    offset: '200px;'
+  });
+
+  // registratiom section animations
+  $('.js-section-register').waypoint(function(direction) {
+      $('.js-wp-animate-register-heading').addClass('animated zoomIn');
+      $('.js-wp-animate-register-parragraph').addClass('animated fadeIn');
+      $('.js-wp-animate-register-form').addClass('animated fadeIn');
+  }, {
+    offset: '200px;'
   });
 
 
