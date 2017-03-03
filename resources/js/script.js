@@ -145,8 +145,46 @@ $(document).ready(function() {
   });
 
 
+  /**************************
+  **** MOBILE NAVIGATION ****
+  **************************/
+  var $logo = $('.js-logo')
+  var $nav = $('.js-main-nav');
+  var $navLinks = $('.js-main-nav li a:link');
+  var $icon = $('.js-nav-icon i');
 
+  $($icon).click(function() {
 
+    if($icon.hasClass('fa fa-bars')) {
+      $(this).removeClass('fa fa-bars');
+      $(this).addClass('fa fa-times');
+    } else {
+      $(this).removeClass('fa fa-times');
+      $(this).addClass('fa fa-bars');
+    }
 
+    // $nav.slideToggle(); these 2 do the same
+    $nav.animate({width:'toggle'},350)
+
+  });
+
+  $($navLinks).click(function() {
+    if($icon.hasClass('fa fa-times')) {
+      $icon.removeClass('fa fa-times');
+      $icon.addClass('fa fa-bars');
+    } else {
+      $icon.removeClass('fa fa-bars');
+      $icon.addClass('fa fa-times');
+    }
+    $nav.animate({width:'toggle'},350)
+  });
+
+  $($logo).click(function() {
+    if($icon.hasClass('fa fa-times')) {
+      $icon.removeClass('fa fa-times');
+      $icon.addClass('fa fa-bars');
+    }
+    $nav.slideUp();
+  });
 
 });

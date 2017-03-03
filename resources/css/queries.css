@@ -6,11 +6,13 @@
 
 /**** SMALL DEVICES FROM 1024 TO 1200px ****/
 @media only screen and (max-width: 1200px) {
-
+  /* --- general ----*/
   .row { width: 90%; }
 
+  /* --- header section ----*/
   .hero-text-box { width: 90%; }
 
+  /* --- programs section ----*/
   figure.program-photo h3 { padding-top: 5%; }
 
 }
@@ -19,15 +21,10 @@
 /**** SMALL DEVICES FROM 768 TO 1024px ****/
 @media only screen and (max-width: 1024px) {
 
+  /* --- general ----*/
   body { font-size: 18px; }
 
   .row { width: 94%; }
-
-  .logo { width: 124px}
-
-  .main-nav li {
-    margin-left: 32px;
-  }
 
   h2 { font-size: 1.9em; }
 
@@ -38,10 +35,19 @@
 
   .long-copy-left { margin-bottom: 20px; }
 
+  /* --- header section ----*/
+  .logo { width: 124px}
+
+
+
+  .main-nav li { margin-left: 32px; }
+
   .hero-text-box { width: 94%; }
 
+  /* --- benefits section ----*/
   .box { padding: 0 1em; }
 
+  /* --- programs section ----*/
   figure.program-photo figcaption::before {
     top: 10px;
     right: 10px;
@@ -56,12 +62,12 @@
     font-size: 1.3em;
   }
 
+  /* --- coach section ----*/
   .section-coach { overflow: hidden; }
 
   .coach-box:first-child  {
     position: relative;
     height: 460px;
-
   }
 
   .coach-box:first-child img {
@@ -70,15 +76,18 @@
     bottom: 0;
   }
 
+  /* --- plans  section ----*/
   .coach-box:last-child { padding: 0; }
 
-
-
   .plan-price { font-size: 2.9em; }
+
   .plan-price span { font-size: .3em; }
 
+
+  /* --- quote section ----*/
   blockquote { padding: 0 1em; }
 
+  /* --- footer section ----*/
   .social-links i { padding: 14px 12px; }
 
 }
@@ -87,32 +96,8 @@
 /**** SMALL DEVICES FROM 481px TO 767px ****/
 @media only screen and (max-width: 767px) {
 
+  /* --- general ----*/
   body { font-size: 16px; }
-
-  section, footer { padding: 40px 0; }
-
-  .main-nav { display: none; }
-
-  .hero-text-box {
-    width: 90%;
-    top: 60%;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 5em;
-    line-height: 100%;
-  }
-  h3.subtitle {
-    letter-spacing: 0px;
-    margin-bottom: 20px;
-   }
-
-  .hero-text-box  .btn { width: 80%; }
-
-  .btn-full:link, .btn-full:visited, input[type="submit"] { margin-right: 0; }
-
-  .btn-full:link, .btn-full:visited { margin-bottom: 20px; }
 
   .col {
     width: 100%;
@@ -120,6 +105,111 @@
     margin-bottom: 20px;
   }
 
+  section, footer { padding: 40px 0; }
+
+  h1 {
+    font-size: 5em;
+    line-height: 100%;
+  }
+
+  h3.subtitle {
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+   }
+
+  .btn-full:link, .btn-full:visited, input[type="submit"] { margin-right: 0; }
+
+  .btn-full:link, .btn-full:visited { margin-bottom: 20px; }
+
+  /* --- header section ----*/
+
+  nav {
+    position: relative;
+    z-index: 10;
+  }
+
+  .logo,
+  .mobile-nav-icon {
+    position: relative;
+    z-index: 10;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 10em;
+    text-align: center;
+    height: 100vh;
+    background-color: #0C0B24;
+    /*z-index: -10;*/
+  }
+
+  .main-nav li {
+    display: block;
+    margin-left: 0;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    font-size: 1em;
+    font-weight: 800;
+    padding: 2em 0;
+    white-space: nowrap;
+  }
+
+  .mobile-nav-icon { display: block; }
+
+  .sticky .logo,
+  .sticky .mobile-nav-icon  {
+    position: relative;
+    z-index: 10;
+  }
+
+  .sticky .main-nav {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 10em;
+    text-align: center;
+    height: 100vh;
+    background-color: rgba(256, 256, 256, .95);
+  }
+
+  .sticky .main-nav li {
+    display: block;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    display: block;
+    border: 0;
+    font-size: 1em;
+    padding: 2em 0;
+    white-space: nowrap;
+  }
+
+  .sticky .mobile-nav-icon { margin-top: 30px; }
+
+
+  .hero-text-box {
+    width: 90%;
+    top: 60%;
+    text-align: center;
+  }
+
+  .hero-text-box  .btn { width: 80%; }
+
+
+  /* --- benefits section ----*/
   .box{
     padding: 0 2em;
     margin-bottom: 40px;
@@ -131,6 +221,7 @@
 
   .box{ padding: 0 2em;}
 
+  /* --- programs section ----*/
   .programs-showcase { margin-top: 20px; }
 
   .programs-showcase li {
@@ -161,6 +252,7 @@
     left: 20px;
   }
 
+  /* --- coach section ----*/
   .section-coach {
     padding-bottom: 1em;
   }
@@ -176,10 +268,12 @@
     text-align: center;
   }
 
+  /* --- quote section ----*/
   .section-quote {
     background-position: 66% center;
   }
 
+  /* --- plans section ----*/
   .plan-box:last-child { border-bottom: 0;}
 
 }
@@ -188,8 +282,10 @@
 /**** SMALL DEVICES FROM 0 TO 480px ****/
 @media only screen and (max-width: 480px) {
 
+  /* --- general section ----*/
   h1 { font-size: 4em; }
 
+  /* --- footer section ----*/
   .social-links li { margin-right: 15px; }
 
 }
@@ -202,10 +298,46 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-    header { min-height: 580px; }
+  /* --- header section ----*/
 
-    .hero-text-box { top: 100%; }
+  header {
+    position: relative;
+    height: 530px;
+  }
 
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+  .main-nav,
+  .sticky .main-nav {
+    height: 530px;
+    padding-top: 7em;
+  }
+
+  .sticky {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: none;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited,
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    font-size: .8em;
+    padding: 0 0 2em 0;
+  }
+
+  .hero-text-box {
+    top: 60%;
+  }
+
+  /* --- coach section ----*/
+    .coach-box:first-child { height: 430px; }
     .coach-box:first-child img { width: 62%; }
 
 }

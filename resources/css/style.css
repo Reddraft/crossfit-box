@@ -219,8 +219,8 @@ header {
   float:left;
 }
 
-/*main navigation*/
 
+/*main navigation*/
 
 .main-nav {
   float: right;
@@ -250,6 +250,23 @@ header {
 .main-nav li a:active {
   color: #e76b37;
   border-bottom: 2px solid #e76b37;
+}
+
+
+/*mobile navigation*/
+
+.mobile-nav-icon,
+.mobile-nav-close-icon {
+  float: right;
+  margin-top: 32px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i,
+.mobile-nav-close-icon i {
+  color: #e76b37;
+  font-size: 2em;
 }
 
 
