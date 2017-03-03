@@ -321,7 +321,7 @@
   .main-nav,
   .sticky .main-nav {
     height: 530px;
-    padding-top: 3em;
+    padding-top: 4em;
   }
 
   .sticky {
@@ -333,8 +333,8 @@
   .main-nav li a:visited,
   .sticky .main-nav li a:link,
   .sticky .main-nav li a:visited {
-    font-size: .8em;
-    padding: 0 0 1.2em 0;
+    font-size: .9em;
+    padding: 0 0 1.6em 0;
   }
 
   .hero-text-box {
