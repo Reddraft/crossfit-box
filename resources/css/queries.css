@@ -112,13 +112,14 @@
   section, footer { padding: 40px 0; }
 
   h1 {
-    font-size: 5em;
+    font-size: 3.8em;
     line-height: 100%;
   }
 
   h3.subtitle {
     letter-spacing: 0px;
     margin-bottom: 20px;
+    font-size: 1.6em;
    }
 
   .btn-full:link, .btn-full:visited, input[type="submit"] { margin-right: 0; }
@@ -137,7 +138,10 @@
     z-index: 10;
   }
 
-  .logo { width: 100px; }
+  .logo {
+    margin-top: 5px;
+    width: 100px;
+  }
 
   .logo,
   .mobile-nav-icon {
@@ -288,6 +292,10 @@
   /* --- plans section ----*/
   .plan-box:last-child { border-bottom: 0;}
 
+  .social-links li {
+    margin-right: 10px;
+  }
+
 }
 
 
@@ -323,7 +331,7 @@
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3.8em;
   }
 
   .logo {
