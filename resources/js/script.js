@@ -173,15 +173,15 @@ $(document).ready(function() {
       $icon.removeClass('fa fa-times');
       $icon.addClass('fa fa-bars');
       $nav.animate({width:'toggle'},350);
-    } 
+    }
   });
 
   $($logo).click(function() {
     if($icon.hasClass('fa fa-times')) {
       $icon.removeClass('fa fa-times');
       $icon.addClass('fa fa-bars');
+      $nav.slideUp();
     }
-    $nav.slideUp();
   });
 
 });
