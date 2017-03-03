@@ -364,7 +364,7 @@ figure.program-photo {
 }
 
 figure.program-photo:hover,
-figure.program-photo:active {
+figure.program-photo.hover_effect {
   background-color: #d25019;
 }
 
@@ -382,7 +382,7 @@ figure.program-photo img {
 }
 
 figure.program-photo:hover img,
-figure.program-photo:active img {
+figure.program-photo.hover_effect img {
   opacity: .2;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -435,12 +435,17 @@ figure.program-photo p {
 figure.program-photo:hover figcaption::before,
 figure.program-photo:hover h3,
 figure.program-photo:hover p,
-figure.program-photo:active figcaption::before,
-figure.program-photo:active h3,
-figure.program-photo:active p {
+figure.programphoto.hover_effect figcaption::before,
+figure.programphoto.hover_effect h3,
+figure.programphoto.hover_effect p {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;
 }
 
 /*********************
