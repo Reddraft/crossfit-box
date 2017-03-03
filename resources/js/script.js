@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-  [].slice.call( document.querySelectorAll('figure.program-photo figcaption a') ).forEach( function(el) {
-    el.onclick = function() { return false; }
-  } );
 
   /***********************
   *** STICKY NAVIGATION **
@@ -165,8 +162,7 @@ $(document).ready(function() {
       $(this).removeClass('fa fa-times');
       $(this).addClass('fa fa-bars');
     }
-
-    // $nav.slideToggle(); these 2 do the same
+    
     $nav.animate({width:'toggle'},350)
 
   });
@@ -186,5 +182,16 @@ $(document).ready(function() {
       $nav.slideUp();
     }
   });
+
+  /**************************
+   click instead of hover
+  on program images on
+  mobile device
+  **************************/
+
+  [].slice.call( document.querySelectorAll('figure.program-photo figcaption a') ).forEach( function(el) {
+    el.onclick = function() { return false; }
+  } );
+
 
 });

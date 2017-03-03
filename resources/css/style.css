@@ -440,6 +440,7 @@ figure.program-photo:hover p {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+
 /*anchor to make hover clickable on mobile. goes with mobile clickable script*/
 figure.program-photo figcaption a {
   position: absolute;
