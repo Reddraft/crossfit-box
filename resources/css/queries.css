@@ -94,7 +94,8 @@
 
 
 /**** SMALL DEVICES FROM 481px TO 767px ****/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px)
+and (-webkit-min-device-pixel-ratio: 2) {
 
   /* --- general ----*/
   body { font-size: 16px; }
@@ -280,7 +281,8 @@
 
 
 /**** SMALL DEVICES FROM 0 TO 480px ****/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
 
   /* --- general section ----*/
   h1 { font-size: 4em; }
