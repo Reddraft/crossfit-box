@@ -98,7 +98,8 @@
 @media only screen
 and (max-width: 767px)
 and (max-device-width: 767px)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
 
   /* --- general ----*/
   body { font-size: 16px; }
@@ -163,7 +164,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     border: 0;
     font-size: 1em;
     font-weight: 800;
-    padding: 2em 0;
+    padding: 1em 0;
     white-space: nowrap;
   }
 
@@ -197,7 +198,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     display: block;
     border: 0;
     font-size: 1em;
-    padding: 2em 0;
+    padding: 1em 0;
     white-space: nowrap;
   }
 
@@ -287,7 +288,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media only screen
   and (max-width: 480px)
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
 
   /* --- general section ----*/
   h1 { font-size: 4em; }
@@ -303,7 +305,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (min-device-width: 320px)
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+  and (orientation: portrait) {
 
   /* --- header section ----*/
 
