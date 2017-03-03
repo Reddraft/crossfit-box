@@ -1,9 +1,8 @@
 $(document).ready(function() {
 
-  $('.hover').bind('touchstart touchend', function(e) {
-      e.preventDefault();
-      $(this).toggleClass('hover_effect');
-  });
+  [].slice.call( document.querySelectorAll('figure.program-photo figcaption a') ).forEach( function(el) {
+    el.onclick = function() { return false; }
+  } );
 
   /***********************
   *** STICKY NAVIGATION **

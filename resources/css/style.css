@@ -199,6 +199,8 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  top: 0;
+  left: 0;
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(67, 67, 67, .04)),  url("../img/hero.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(67, 67, 67, .04)),  url("../img/hero.jpg");
 
@@ -363,9 +365,9 @@ figure.program-photo {
           transition: background-color .5s;
 }
 
-figure.program-photo:hover,
-figure.program-photo.hover_effect {
+figure.program-photo:hover {
   background-color: #d25019;
+
 }
 
 figure.program-photo img {
@@ -381,8 +383,7 @@ figure.program-photo img {
           transition: opacity .5s, transform .5s, -webkit-transform .5s;
 }
 
-figure.program-photo:hover img,
-figure.program-photo.hover_effect img {
+figure.program-photo:hover img {
   opacity: .2;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -434,18 +435,23 @@ figure.program-photo p {
 
 figure.program-photo:hover figcaption::before,
 figure.program-photo:hover h3,
-figure.program-photo:hover p,
-figure.programphoto.hover_effect figcaption::before,
-figure.programphoto.hover_effect h3,
-figure.programphoto.hover_effect p {
+figure.program-photo:hover p {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-
-.hover {
--webkit-user-select: none;
--webkit-touch-callout: none;
+/*anchor to make hover clickable on mobile. goes with mobile clickable script*/
+figure.program-photo figcaption a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
 }
 
 /*********************
