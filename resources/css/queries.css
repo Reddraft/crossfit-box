@@ -164,7 +164,7 @@ and (orientation: portrait) {
     border: 0;
     font-size: 1em;
     font-weight: 800;
-    padding: 1em 0;
+    padding: 2em 0;
     white-space: nowrap;
   }
 
@@ -198,7 +198,7 @@ and (orientation: portrait) {
     display: block;
     border: 0;
     font-size: 1em;
-    padding: 1em 0;
+    padding: 2em 0;
     white-space: nowrap;
   }
 
