@@ -478,8 +478,8 @@ figure.program-photo:hover p {
   padding: 8em 0;
   background-size: cover;
   background-position: center center;
-  background-image: -webkit-linear-gradient(right, rgba(210, 80, 25, .5), rgba(168, 50, 121, .2)), url("../img/inspiration.jpg");
-  background-image: linear-gradient(to left, rgba(210, 80, 25, .5), rgba(168, 50, 121, .2)), url("../img/inspiration.jpg");
+  background-image: -webkit-linear-gradient(right, rgba(210, 80, 25, .5), rgba(168, 50, 121, .2)), url('../img/inspiration.jpg');
+  background-image: linear-gradient(to left, rgba(210, 80, 25, .5), rgba(168, 50, 121, .2)), url('../img/inspiration.jpg');
 }
 
 
@@ -492,7 +492,7 @@ figure.program-photo:hover p {
   background-attachment: fixed;
   background-position: center center;
   color: #fff;
-  background-image: -webkit-linear-gradient(right, rgba(12, 11, 36, 1), rgba(12, 11, 36, .5)), url("../img/testimonials-bg.jpg");
+  background-image: -webkit-linear-gradient(right, rgba(12, 11, 36, 1), rgba(12, 11, 36, .5)), url('../img/testimonials-bg.jpg');
   background-image: linear-gradient(to left, rgba(12, 11, 36, 1), rgba(12, 11, 36, .5)), url("../img/testimonials-bg.jpg");
 }
 

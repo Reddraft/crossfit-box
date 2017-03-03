@@ -2,7 +2,10 @@
   "name": "crossfit-box",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +20,5 @@
     "url": "https://github.com/Reddraft/crossfit-box/issues"
   },
   "homepage": "https://github.com/Reddraft/crossfit-box#readme",
-  "dependencies": {
-    "express": "^4.15.0"
-  }
+
 }
