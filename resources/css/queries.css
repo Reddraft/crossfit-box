@@ -127,6 +127,11 @@
 
   /* --- header section ----*/
 
+  header
+  .section-testimonials {
+    background-attachment: scroll;
+  }
+
   nav {
     position: relative;
     z-index: 10;
@@ -310,6 +315,7 @@
   header {
     position: relative;
     height: 530px;
+    background-attachment: scroll;
   }
 
   h1 {
