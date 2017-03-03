@@ -132,6 +132,8 @@
     z-index: 10;
   }
 
+  .logo { width: 100px; }
+  
   .logo,
   .mobile-nav-icon {
     position: relative;
@@ -310,6 +312,10 @@
     height: 530px;
   }
 
+  .logo {
+    width: 100px;
+  }
+
   nav {
     position: fixed;
     top: 0;
@@ -321,7 +327,7 @@
   .main-nav,
   .sticky .main-nav {
     height: 530px;
-    padding-top: 4em;
+    padding-top: 3em;
   }
 
   .sticky {
