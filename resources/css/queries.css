@@ -133,7 +133,7 @@
   }
 
   .logo { width: 100px; }
-  
+
   .logo,
   .mobile-nav-icon {
     position: relative;
@@ -310,6 +310,10 @@
   header {
     position: relative;
     height: 530px;
+  }
+
+  h1 {
+    font-size: 4em;
   }
 
   .logo {
