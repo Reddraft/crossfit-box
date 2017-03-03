@@ -172,11 +172,8 @@ $(document).ready(function() {
     if($icon.hasClass('fa fa-times')) {
       $icon.removeClass('fa fa-times');
       $icon.addClass('fa fa-bars');
-    } else {
-      $icon.removeClass('fa fa-bars');
-      $icon.addClass('fa fa-times');
-    }
-    $nav.animate({width:'toggle'},350)
+      $nav.animate({width:'toggle'},350);
+    } 
   });
 
   $($logo).click(function() {
