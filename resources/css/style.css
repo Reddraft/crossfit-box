@@ -363,9 +363,9 @@ figure.program-photo {
           transition: background-color .5s;
 }
 
-figure.program-photo:hover {
+figure.program-photo:hover,
+figure.program-photo:focus {
   background-color: #d25019;
-
 }
 
 figure.program-photo img {
@@ -381,7 +381,8 @@ figure.program-photo img {
           transition: opacity .5s, transform .5s, -webkit-transform .5s;
 }
 
-figure.program-photo:hover img {
+figure.program-photo:hover img,
+figure.program-photo:focus img {
   opacity: .2;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -433,7 +434,10 @@ figure.program-photo p {
 
 figure.program-photo:hover figcaption::before,
 figure.program-photo:hover h3,
-figure.program-photo:hover p {
+figure.program-photo:hover p,
+figure.program-photo:focus figcaption::before,
+figure.program-photo:focus h3,
+figure.program-photo:focus p {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
