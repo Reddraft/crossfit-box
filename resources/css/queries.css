@@ -145,7 +145,7 @@
     right: 0;
     width: 100%;
     margin-top: 0;
-    padding-top: 10em;
+    padding-top: 8em;
     text-align: center;
     height: 100vh;
     background-color: #0C0B24;
@@ -182,7 +182,7 @@
     right: 0;
     width: 100%;
     margin-top: 0;
-    padding-top: 10em;
+    padding-top: 8em;
     text-align: center;
     height: 100vh;
     background-color: rgba(256, 256, 256, .95);
@@ -334,7 +334,7 @@
   .sticky .main-nav li a:link,
   .sticky .main-nav li a:visited {
     font-size: .8em;
-    padding: 0 0 2em 0;
+    padding: 0 0 1.2em 0;
   }
 
   .hero-text-box {
