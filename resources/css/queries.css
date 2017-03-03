@@ -127,7 +127,7 @@
 
   /* --- header section ----*/
 
-  header
+  header,
   .section-testimonials {
     background-attachment: scroll;
   }
@@ -315,6 +315,10 @@
   header {
     position: relative;
     height: 530px;
+    background-attachment: scroll;
+  }
+
+  .section-testimonials {
     background-attachment: scroll;
   }
 
