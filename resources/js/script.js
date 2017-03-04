@@ -148,46 +148,63 @@ $(document).ready(function() {
   /**************************
   **** MOBILE NAVIGATION ****
   **************************/
-  var $logo = $('.js-logo')
-  var $nav = $('.js-main-nav');
-  var $navLinks = $('.js-main-nav li a:link');
-  var $icon = $('.js-nav-icon i');
 
-  $($icon).click(function() {
+  $(window).resize(function(){
+    var $nav = $('.js-main-nav');
+    var $icon = $('.js-nav-icon i');
 
-    if($icon.hasClass('fa fa-bars')) {
-      $(this).removeClass('fa fa-bars');
-      $(this).addClass('fa fa-times');
+    if ($(window).width() > 767){
+      $nav.css("display", "block");
+      $icon.removeClass(' fa-bars');
+      $icon.addClass('fa-times');
     } else {
-      $(this).removeClass('fa fa-times');
-      $(this).addClass('fa fa-bars');
+      $nav.css("display", "none");
+      $icon.removeClass(' fa-times');
+      $icon.addClass('fa-bars');
     }
-    
-    $nav.animate({width:'toggle'},350)
 
   });
 
-  $($navLinks).click(function() {
-    if($icon.hasClass('fa fa-times')) {
-      $icon.removeClass('fa fa-times');
-      $icon.addClass('fa fa-bars');
-      $nav.animate({width:'toggle'},350);
-    }
+
+  $('.js-nav-icon').click(function() {
+      var $nav = $('.js-main-nav');
+      var $icon = $('.js-nav-icon i');
+
+      $nav.animate({width: 'toggle'});
+
+      if ($icon.hasClass('fa-bars')) {
+        $icon.removeClass('fa-bars');
+        $icon.addClass('fa-times');
+
+      } else  {
+        $icon.removeClass('fa-times');
+        $icon.addClass('fa-bars');
+      }
   });
 
-  $($logo).click(function() {
-    if($icon.hasClass('fa fa-times')) {
-      $icon.removeClass('fa fa-times');
-      $icon.addClass('fa fa-bars');
-      $nav.slideUp();
+  $('.js-main-nav li a:link').click(function(){
+    var $nav = $('.js-main-nav');
+    var $icon = $('.js-nav-icon i');
+
+    if ($(window).width() < 768){
+      $nav.animate({width: 'toggle'});
     }
+
+    if ($icon.hasClass('fa-bars')) {
+      $icon.removeClass('fa-bars');
+      $icon.addClass('fa-times');
+    } else {
+      $icon.removeClass('fa-times');
+      $icon.addClass('fa-bars');
+    }
+
   });
 
-  /**************************
-   click instead of hover
-  on program images on
-  mobile device
-  **************************/
+
+
+  /*********************************************************
+   click instead of hover on program images on mobile device
+  *********************************************************/
 
   [].slice.call( document.querySelectorAll('figure.program-photo figcaption a') ).forEach( function(el) {
     el.onclick = function() { return false; }
